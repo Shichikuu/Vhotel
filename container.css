@@ -1,0 +1,304 @@
+.linear-gradient-box-up{
+    background: linear-gradient(to top,rgb(0, 0, 0),transparent 98%);
+    left: 0;
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 5;
+}
+
+.linear-gradient-box-bottom{
+    background: linear-gradient(to bottom,rgb(0, 0, 0),transparent 98%);
+    left: 0;
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.linear-gradient-box-left{
+    background: linear-gradient(to left,rgb(0, 0, 0),transparent 98%);
+    width: 200px;
+    height: 100%;
+    max-height: 648px;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    z-index: 5;
+}
+
+.linear-gradient-box-right{
+    background: linear-gradient(to right,rgb(0, 0, 0),transparent 98%);
+    width: 200px;
+    height: 100%;
+    max-height: 648px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: 5;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 100vw;
+}
+
+.wrapper{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width:100%;
+}
+
+.image-wrapper{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width:1149px;
+    max-height: 648px;
+}
+
+.text-wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    max-width: 100vw;
+    z-index: 10;
+}
+
+.text-box{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    width:100%;
+    max-width: 80vw;
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+.facility-text-box{
+    position: relative;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    width:100%;
+    max-width: 1200px;
+    height: 100%;
+    padding-bottom: 2%;
+}
+
+.title-box{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    width:80%;
+}
+
+
+
+.room-desc{
+    position: relative;
+    display: flex;
+    width: 90vw;
+    max-width: 1178px;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 491px;
+}
+
+.room-desc-content{
+    width: 100%;
+    height: 69px;
+    max-width: 664px;
+}
+
+.book-now{
+    width: 100%; 
+    max-width: 720px;
+    height: 70px; 
+    position: relative; 
+    margin: 0 auto;
+    border: 3px solid #7c6f55;
+    background: #7c6f55;
+}
+
+.book-now :hover{
+    border: 3px solid #7c6f55;
+    background: rgba(18,18,18);
+    transition: 0.5s;
+}
+
+.facility-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1077px;
+    margin: 50px auto;
+    margin-bottom: 80px;
+}
+
+.facility-container-center{
+    display: flex;
+    justify-content: center;
+    max-width: 410px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.sub-facility{
+    width: 100%;
+    height: 100%;
+    max-width: 365px;
+}
+
+.reservation-container{
+    display: flex;
+    justify-content: center;
+    top: 30px;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 1284.97px;
+    height: 1350px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: #1e1e1e;
+}
+
+.reservation-form{
+    display: flex; 
+    flex-direction: column;
+    justify-content:space-between;
+    position: relative;
+    height: 1350px; 
+    width: 90vw;
+    max-width: 1177px; 
+    padding-top: 0px; 
+    padding-bottom: 50px;
+}
+
+.input-form{
+    width: 100%;
+    max-width: 1177px;  
+    background: transparent; 
+    border-top-width: 0px; 
+    border-right-width: 0px; 
+    border-bottom-width: 2px; 
+    border-left-width: 0px; 
+    border-color: #dfd8bd;
+    padding-top: 25px;
+}
+
+.reservation-book{
+    max-width: 1177px;
+    width: 100%; 
+    height: 75px; 
+    position: relative; 
+    margin: 50px auto;
+    background: rgba(18,18,18);
+    border:2px solid #dfd8bd;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+    .contact{
+        flex-direction: column ;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .footer-bottom{
+        margin-top: 20px;
+        flex-direction: column ;
+        max-width: 500px;
+    }
+
+    .footer-content{
+        margin: 0 auto;
+    }
+
+    .footer-content h1{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .footer-content h2{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .footer-content h3{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .text-box{
+        position: relative;
+        top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        z-index: 1;
+        width:100%;
+        height: 100%;
+        padding-bottom: 5%;
+    }
+
+    .room-desc{
+        max-width: 90vw;
+        margin-bottom: 50px;
+        height: 200px;
+    }
+
+    .facility-text-box{
+        width: 90vw;
+    }
+
+    .facility-container{
+        width: 90vw;
+    }
+
+    .book-now{
+        width: 80vw;
+        height: 40px;
+    }
+
+    .reservation-book{
+        width: 90vw; 
+        height: 75px; 
+        position: relative; 
+        margin: 60px auto;
+        background: rgba(18,18,18);
+        border:2px solid #dfd8bd;
+    }
+
+    .reservation-book h1{
+        width: 90vw;
+    }
+
+    .input-form{
+        padding-top: 15px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VhoTel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./image.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./style3.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./container.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+          <a href="javascript:void(0);" class="dropdown-icon" onclick="dropdown()">&#9776;</a>
+          <h1>VhoTel</h1>
+          <h1>Jakarta</h1>
+          <div class="vertical-line"></div>
+        </div>
+        <div id="navbar" class="navbar">
+          <a href="./home.html">HOME</a>
+          <a href="./room1.html">OUR ROOM</a>
+          <a href="./facility.html">OUR FACILITIES</a>
+          <a id="navbar-selected" href="./reservation.html">RESERVATION</a>
+          <a href="./about-us.html">ABOUT US</a>
+        </div>
+    </div>
+    <div class="reservation-image"></div>
+    <div class="wrapper">
+      <div class="background-image-text text-wrapper">
+        <h1>Reservation</h1>
+        <h5>Tell us your plan</h5>
+      </div>
+      <div class="linear-gradient-box-up"></div>
+    </div>
+    <div class="wrapper">
+        <div class="reservation-container">
+            <form>
+                <div class="reservation-form">
+                    <label>Guests</label>
+                    <input type="number" name="guests" class="input-form" id="guests"/>
+                    <p id="errorguests" class="errormsg"></p>
+                    <label>Check In Date</label>
+                    <input type="date" name="check-in" class="input-form" id="check-in"/>
+                    <p id="errorcheckin" class="errormsg"></p>
+                    <label>Check Out Date</label>
+                    <input type="date" name="check-out" class="input-form" id="check-out"/>
+                    <p id="errorcheckout" class="errormsg"></p>
+                    <label>Suite</label>
+                    <select name="suite" class="input-form" id="suite" onchange="changePrice()">
+                      <option value="king">Royal King Suite</option>
+                      <option value="twin">Deluxe Twin Suite</option>
+                      <option value="vholux">VhoLux Suite</option>
+                    </select>
+                    <label>Name</label>
+                    <input type="text" name="name" class="input-form" id="name"/>
+                    <p id="errorname" class="errormsg"></p>
+                    <label>Email</label>
+                    <input type="text" name="email" class="input-form" id="email"/>
+                    <p id="erroremail" class="errormsg"></p>
+                    <h2 id="price" class="price">Total Price: Rp 7.699.000,00-</h2>
+                    <button type="button" class="reservation-book" onclick="validateForm()">
+                      <h1>CONFIRM AND BOOK</h1>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>CONTACT</h1>
+        <div class="contact">
+          <div class="sub-contact">
+            <div class="footer-vertical-line"></div>
+            <h1>ADDRESS</h1>
+            <p>Gatot Subroto St - Jakarta</p>
+          </div>
+          <div class="sub-contact">
+            <div class="footer-vertical-line"></div>
+            <h1>EMAIL</h1>
+            <p>reservations@vhotel.com</p>
+          </div>
+          <div class="sub-contact">
+            <div class="footer-vertical-line"></div>
+            <h1>TELEPHONE</h1>
+            <p>+62 (21) 2231 - 9991 </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-content">
+            <h1>TERMS & CONDITIONS</h1>
+            <h1>PRIVACY POLICY</h1>
+            <h1>FAQS</h1>
+            <h1>ABOUT US</h1>
+          </div>
+          <div class="footer-content">
+            <h2>CONTACT US</h2>
+            <h2>RESIDENCES</h2>
+            <h2>PARTNERSHIP</h2>
+          </div>
+          <div class="footer-content">
+            <h3>Sign up to the VhoTel newsletter</h3>
+            <div class="newsletter-icon-container">
+              <img src="./assets/twitter.png" id="newsletter-icon"/>
+              <img src="./assets/facebook.png" id="newsletter-icon"/>
+              <img src="./assets/instagram.png" id="newsletter-icon"/>
+              <img src="./assets/youtube.png" id="youtube-icon"/>
+            </div>
+          </div>
+        </div>
+        <h2>Copyright © 2023 VhoTel LLC</h2>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

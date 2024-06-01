@@ -1,0 +1,144 @@
+.room-desc-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1; 
+    text-align: left;
+    width:100%;
+    max-width: 1440px;
+    top: 10px;
+    margin-bottom: 60px;
+}
+
+.room-desc-title h1{
+    font-size: 45px;
+    text-align: left;
+    color:#dfd8bd;
+    font-family: Helvetica;
+    font-weight: 400;
+    letter-spacing: 4px;
+    bottom: 20px;
+    padding: 0 0 0 3%;
+}
+
+.room-desc-content h1{
+    font-size: 35px;
+    text-align: left;
+    color:#dfd8bd;
+    font-family: Helvetica;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 0 0 0 0;
+}
+
+.room-desc-content h2{
+    font-size: 25px;
+    text-align: left;
+    color:#ffffff;
+    font-family: Helvetica;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 0 0 20px 0;
+}
+
+.gallery-title{
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    max-width: 975px;
+}
+
+.gallery-title h1{
+    font-size: 45px;
+    color:#dfd8bd;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 4px;
+    padding: 75px 0 0 0;
+}
+
+.book-now h1{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    text-align: center;
+    color:#ffffff;
+    font-family: Helvetica;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 12px 0 0 0;
+    margin: 0 0;
+    text-shadow: none;
+    width:100%;
+    max-width: 720px; 
+    height: 70px; 
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    max-width: 1800px;
+    padding: 0 0 0 0;
+    margin: 0 auto;
+}
+
+#navigation-right{
+    margin: 0 auto;
+    position: absolute;
+    max-width: 35px;
+    max-height: 50px;
+    bottom: 100px;
+    right:5%;
+}
+
+#navigation-left{
+    transform: rotate(180deg);
+    position: absolute;
+    max-width: 35px;
+    max-height: 50px;
+    bottom: 100px;
+    left:5%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+    #navigation-right{
+        max-width: 17.5px;
+        max-height: 25px;
+    }
+    
+    #navigation-left{
+        max-width: 17.5px;
+        max-height: 25px;
+    }
+
+    .room-desc-title h1{
+        text-align: center;
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .room-desc-content h1{
+        font-size: 15px;
+    }
+    .room-desc-content h2{
+        font-size: 12px;
+    }
+    .book-now h1{
+        padding-top: 7.5px;
+        font-size: 20px;
+        width: 80vw;
+        height: 40px;
+    }
+    .gallery-title h1{
+        font-size: 30px;
+    }
+}

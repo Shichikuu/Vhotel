@@ -1,0 +1,217 @@
+.vertical-line-long{
+    position: absolute;
+    border-left: 3px solid rgba(255,255,255,0.4);
+    height: 140px;
+    margin-left: 0px;
+}
+
+.facility-horizontal-line{
+    position: relative;
+    border-bottom: 3px solid rgba(255,255,255,0.4);
+    width: 410px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.facility-horizontal-line-short{
+    position: relative;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    width: 260px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.sub-facility h1{
+    font-family: Helvetica;
+    font-size: 23px;
+    font-weight: bold; 
+    text-align: left; 
+    color: #dfd8bd;
+    margin-left: 30px;
+    margin-bottom: 18px;
+    margin-top: 2px;
+}
+
+.sub-facility h2{
+    font-family: Helvetica;
+    font-size: 23px;
+    font-weight: bold; 
+    text-align: center; 
+    color: #dfd8bd;
+    margin-bottom: 18px;
+    margin-top: 2px;
+    width: 100%;
+}
+
+.sub-facility h3{
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 600; 
+    text-align: center; 
+    color: #fff;
+    width: 100%;
+}
+
+.sub-facility p{
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 600; 
+    text-align: left; 
+    color: #fff;
+    margin-left: 30px;
+}
+
+.reservation-image{
+    background-image: url("./assets/reservation.png");
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: -10%;
+    z-index: -1;
+}
+
+.reservation-form label{
+    font-family: Helvetica;
+    font-size: 35px;
+    font-weight: 400; 
+    text-align: left; 
+    color: #dfd8bd;
+    width: 100%;
+    max-width: 1177px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px 10px 0 0;
+    letter-spacing: 2px;
+}
+
+.reservation-book h1{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    color:#ffffff;
+    font-family: Helvetica;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 15px 0 0 0;
+    margin: 0 0;
+    text-shadow: none;
+    width: 90vw; 
+    max-width: 1177px;
+    height: 75px;
+}
+
+.errormsg{
+    color: red;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0;
+    text-shadow: none;
+}
+
+input{
+    position: relative;
+    font-size: 30px;
+    text-align: left;
+    color:#ffffff;
+    font-family: Helvetica;
+    font-weight: 400;
+    margin: 0 0;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    text-shadow: none;
+    bottom: 0;
+}
+
+input[type="date" i]{
+    padding: 50px 50px 30px 0;
+    height: 50px;
+} 
+
+select{
+    font-size: 30px;
+    text-align: left;
+    color:#ffffff;
+    font-family: Helvetica;
+    font-weight: 400;
+    margin: 0 0;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    text-shadow: none;
+    bottom: 0;
+}
+
+select option{
+    background: rgba(30,30,30);
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+    .reservation-book h1{
+        font-size: 20px;
+        padding-top: 22.5px;
+    }
+
+    .sub-facility h1{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .sub-facility h2{
+        font-size: 15px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .sub-facility h3{
+        font-size: 15px;
+    }
+
+    .sub-facility p{
+        font-size: 12px; 
+        margin-left: 15px; 
+    }
+
+    .vertical-line-long{
+        height: 130px;
+    }
+
+    .facility-horizontal-line{
+        padding-top: 30px;
+        width: 200px;
+    }
+
+    .facility-horizontal-line-short{
+        width: 160px;
+    }
+
+    .reservation-form label{
+        font-size: 20px;
+    }
+
+    .errormsg{
+        font-size: 15px;
+    }
+
+    input{
+        font-size: 20px;
+    }
+
+    select{
+        font-size: 20px;
+    }
+
+    input[type="date" i]{
+        padding-top: 20px;
+    }
+}

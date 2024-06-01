@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "TFArrow";
+    src: url("./assets/fonts/TFArrow\ Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GaramondMTReg";
+    src: url("./assets/fonts/GaramondMTRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GaramondMTBold";
+    src: url("./assets/fonts/GaramondMTBold.ttf") format("truetype");
+}
